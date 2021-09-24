@@ -1,10 +1,3 @@
 module.exports = {
-    plugins: [
-        [
-            "postcss-rtlcss",
-            {
-                mode: 'override'
-            }
-        ]
-    ]
+    plugins: ["postcss-rtlcss"]
 }
