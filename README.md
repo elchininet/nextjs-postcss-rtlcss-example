@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and using [poscss-rtlcss plugin](https://github.com/elchininet/postcss-rtlcss) to generate right-to-left and left-to-right css rules automatically.
 
 ## Getting Started
 
