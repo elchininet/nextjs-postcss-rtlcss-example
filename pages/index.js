@@ -1,7 +1,21 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  const [dir, setDir] = useState('ltr');
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.dir = dir;
+    }
+  }, [dir]);
+
+  function changeDirection(event) {
+    setDir(event.currentTarget.value);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,6 +31,17 @@ export default function Home() {
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
+        </p>
+
+        <div className={styles.testContainer}>
+          Card to test LTR and RTL styles. The CSS rule name is <em>testCard</em>
+        </div>
+
+        <p>
+          <select className={styles.selector} onChange={changeDirection}>
+            <option value="ltr">Left to Right</option>
+            <option value="rtl">Right to Left</option>
+          </select>
         </p>
 
         <div className={styles.grid}>

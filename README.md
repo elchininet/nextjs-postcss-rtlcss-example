@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and using [poscss-rtlcss plugin](https://github.com/elchininet/postcss-rtlcss) to generate right-to-left and left-to-right css rules automatically.
 
+In the folder `my-app/styles/Home.module.css` try to edit the styles of the `testContainer` rule and change the selector from LTR to RTL to see the changes.
+
 ## Getting Started
 
 First, run the development server:
