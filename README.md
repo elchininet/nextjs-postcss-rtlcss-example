@@ -1,6 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and using [poscss-rtlcss plugin](https://github.com/elchininet/postcss-rtlcss) to generate right-to-left and left-to-right css rules automatically.
 
-In the folder `my-app/styles/Home.module.css` try to edit the styles of the `testContainer` rule and change the selector from LTR to RTL to see the changes.
+In the CSS file `styles/Home.module.css` try to edit the styles of the `testContainer` rule and change the selector from LTR to RTL to see the changes.
+
+In the file `styles/Home.module.scss` there are the same styles as in `styles/Home.module.css`, but showing how the directives should be written in SASS to avoid them being removed by the compiler.
 
 ## Getting Started
 

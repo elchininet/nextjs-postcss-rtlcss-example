@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import sassStyles from '../styles/Home.module.scss'
 
 export default function Home() {
 
@@ -33,9 +34,13 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.testContainer}>
+        <p className={styles.testContainer}>
           Card to test LTR and RTL styles. The CSS rule name is <em>testCard</em>
-        </div>
+        </p>
+
+        <p className={sassStyles.testSassContainer}>
+          Card to test LTR and RTL styles written in SCSS. The CSS rule name is <em>testSassContainer</em> and it is contained in the <em>/styles/Home.module.scss</em>
+        </p>
 
         <p>
           <select className={styles.selector} onChange={changeDirection}>
