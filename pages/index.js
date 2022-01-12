@@ -29,6 +29,14 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <div class="card">
+          <div class="card-body">
+          <h5 class="card-title">Bootstrap card</h5>
+          <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
